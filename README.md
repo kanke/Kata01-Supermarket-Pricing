@@ -1,4 +1,4 @@
-# QMetric Code Exercise
+# QMetric Code Exercise
 We value the ability to model problems in software, so our first assessment will be around that subject. The exercise is to model and code a simple supermarket pricing solution and it is inspired on [PragDave Supermaket Kata](http://codekata.com/kata/kata01-supermarket-pricing/). 
  
 Please read through the description carefully and implement a solution for it. We don't want you to over-engineer the solution but be prepared to extend the functionality in the next step of the interview process. Please dedicate **around 3 hours** to do the exercise and then send it back for review. Don't get concerned if the feedback is to complete the exercise! 
@@ -18,7 +18,7 @@ Good Luck!
 * We value good domain names and modelling
 * Immutability 
 
-## Things to expect
+## Things to expect
 * If you get to the next stage we will pair on your code
 * We will add some more features
 * Maybe refactor some things
@@ -33,7 +33,7 @@ You have the task to write a component that can calculate the total amount to pa
 - Three cans of beans for the price of two.
 - Two cans of Coke, for £1.
 
-## Example
+## Example
 Use the following example of a receipt to know what data needs to be available. **There's no requirement to format or print a receipt**.
 
     Beans                0.50
@@ -53,8 +53,3 @@ Use the following example of a receipt to know what data needs to be available. 
     Total savings       -0.90
     -------------------------
     Total to Pay         2.40
-
-
-## Extras
-For bonus, describe what REST resources and uri would be appropriate.
-
