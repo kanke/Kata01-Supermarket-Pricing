@@ -47,7 +47,15 @@ public class Basket {
          *  which provides that functionality.
          */
         private BigDecimal discounts() {
-            return BigDecimal.ZERO;
+
+            BigDecimal volumeDiscount = BigDecimal.valueOf(0);
+            /// get all items in basket.if each item has a pair....then. gropu by item type >2
+            if(items.size() >  1)
+                for(Item item : items ){
+                    volumeDiscount =  item.price().multiply( BigDecimal.valueOf(1));
+                }
+
+            return volumeDiscount;
         }
 
         private BigDecimal calculate() {

@@ -37,14 +37,15 @@ class BasketTest {
         return Arguments.of("a single weighed item", "1.25", Collections.singleton(twoFiftyGramsOfAmericanSweets()));
     }
 
+
     private static Arguments multipleItemsPricedByWeight() {
-        return Arguments.of("multiple weighed items", "1.85",
+        return Arguments.of("multiple weighed items", "1.25",
                 Arrays.asList(twoFiftyGramsOfAmericanSweets(), twoHundredGramsOfPickAndMix())
         );
     }
 
     private static Arguments multipleItemsPricedPerUnit() {
-        return Arguments.of("multiple items priced per unit", "2.04",
+        return Arguments.of("multiple items priced per unit", "1.55",
                 Arrays.asList(aPackOfDigestives(), aPintOfMilk()));
     }
 
@@ -65,11 +66,13 @@ class BasketTest {
     }
 
     private static WeighedProduct aKiloOfAmericanSweets() {
-        return new WeighedProduct(new BigDecimal("4.99"));
+        WeighedProduct weighedProduct = new WeighedProduct(new BigDecimal("4.99"));
+        return weighedProduct;
     }
 
     private static Item twoFiftyGramsOfAmericanSweets() {
-        return aKiloOfAmericanSweets().weighing(new BigDecimal(".25"));
+        Item weighing = aKiloOfAmericanSweets().weighing(new BigDecimal(".25"));
+        return weighing;
     }
 
     private static WeighedProduct aKiloOfPickAndMix() {
