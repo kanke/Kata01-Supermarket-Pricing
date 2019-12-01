@@ -48,13 +48,3 @@ We really don't want you to over-engineer the solution -- and you really don't h
 Clone or fork this project into a _publicly accessible_ git repository of your own, and email the URL to to [tpadberg@qmetric.co.uk](mailto:tpadberg@qmetric.co.uk). 
 
 Good Luck!
-
-## Assumptions - For Test Purposes
-- Buy one, get one free is mix and match across product....So if I buy digestive, I get milk for free
-
-## To Handle - For Test Purposes
-- Discount should be applied on product level not item level?
-- A product can have multiple discounts, which should we pick?
-- Discount is read from database or file, therefore, shouldn't be hardcoded.
-- Multiple discounts on basket items, how should this be handled?
-- Strategy pattern to select pricing strategy at run time, Factory pattern to create pricing strategy on the fly
