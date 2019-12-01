@@ -1,5 +1,8 @@
 package kata.supermarket;
 
+import kata.supermarket.Item.Impl.ItemByWeight;
+import kata.supermarket.Item.Item;
+
 import java.math.BigDecimal;
 
 public class WeighedProduct {
@@ -10,7 +13,7 @@ public class WeighedProduct {
         this.pricePerKilo = pricePerKilo;
     }
 
-    BigDecimal pricePerKilo() {
+    public BigDecimal pricePerKilo() {
         return pricePerKilo;
     }
 

@@ -1,5 +1,7 @@
-package kata.supermarket;
+package kata.supermarket.Pricing;
 
+
+import kata.supermarket.Item.Item;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

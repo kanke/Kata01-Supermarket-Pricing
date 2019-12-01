@@ -1,4 +1,8 @@
-package kata.supermarket;
+package kata.supermarket.Pricing.Impl;
+
+import kata.supermarket.Item.Item;
+import kata.supermarket.Pricing.Pricing;
+import kata.supermarket.Pricing.PricingStrategy;
 
 import java.util.List;
 

@@ -1,5 +1,9 @@
 package kata.supermarket;
 
+import kata.supermarket.Item.Item;
+import kata.supermarket.Pricing.Pricing;
+import kata.supermarket.Pricing.Impl.PricingStrategyFactory;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
