@@ -11,14 +11,8 @@ import java.util.List;
  */
 public class PricingStrategyFactory implements Pricing {
 
-    private final List<Item> items;
-
-    public PricingStrategyFactory(List<Item> items) {
-        this.items = items;
-    }
-
     @Override
-    public PricingStrategy getPricing() {
+    public PricingStrategy getPricing(List<Item> items) {
 
         //this should ideally not be hardcoded and come from a source. Using 2 because of 2-4-1 pricing
         Integer volume = 2;

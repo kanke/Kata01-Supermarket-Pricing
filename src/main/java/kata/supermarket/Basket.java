@@ -15,7 +15,7 @@ public class Basket {
 
     public Basket() {
         this.items = new ArrayList<>();
-        pricing = new PricingStrategyFactory(Collections.unmodifiableList(items));
+        pricing = new PricingStrategyFactory();
     }
 
     public void add(final Item item) {
@@ -23,6 +23,6 @@ public class Basket {
     }
 
     public BigDecimal total() {
-        return pricing.getPricing().calculateTotal();
+        return pricing.getPricing(Collections.unmodifiableList(items)).calculateTotal();
     }
 }
