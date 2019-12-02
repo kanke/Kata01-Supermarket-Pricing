@@ -6,9 +6,7 @@ import kata.supermarket.Pricing.PricingStrategy;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * Created by kanke on 01/12/2019.
- */
+
 public class RegularStrategy implements PricingStrategy {
 
     private final List<Item> items;
@@ -18,7 +16,7 @@ public class RegularStrategy implements PricingStrategy {
     }
 
     @Override
-    public BigDecimal getTotal() {
+    public BigDecimal calculateTotal() {
         return PricingStrategy.subtotal(items);
     }
 }

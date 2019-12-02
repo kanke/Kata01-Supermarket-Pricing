@@ -30,14 +30,14 @@ class BasketTest {
                 aSingleItemPricedPerUnit(),
                 multipleItemsPricedPerUnit(),
                 aSingleItemPricedByWeight(),
-                multipleItemsPricedByWeight()
+                multipleItemsPricedByWeight(),
+                FiveItemsPricedPerUnit()
         );
     }
 
     private static Arguments aSingleItemPricedByWeight() {
         return Arguments.of("a single weighed item", "1.25", Collections.singleton(twoFiftyGramsOfAmericanSweets()));
     }
-
 
     private static Arguments multipleItemsPricedByWeight() {
         return Arguments.of("multiple weighed items", "1.25",
@@ -50,6 +50,12 @@ class BasketTest {
                 Arrays.asList(aPackOfDigestives(), aPintOfMilk()));
     }
 
+    private static Arguments FiveItemsPricedPerUnit() {
+        return Arguments.of("five items priced per unit", "2.05",
+                Arrays.asList(aPackOfDigestives(), aPintOfMilk(), aBoxOfNoodles(), aCanOfBeans(), aPackOfCandy()));
+    }
+
+
     private static Arguments aSingleItemPricedPerUnit() {
         return Arguments.of("a single item priced per unit", "0.49", Collections.singleton(aPintOfMilk()));
     }
@@ -60,6 +66,18 @@ class BasketTest {
 
     private static Item aPintOfMilk() {
         return new Product(new BigDecimal("0.49")).oneOf();
+    }
+
+    private static Item aCanOfBeans() {
+        return new Product(new BigDecimal("0.40")).oneOf();
+    }
+
+    private static Item aPackOfCandy() {
+        return new Product(new BigDecimal("0.20")).oneOf();
+    }
+
+    private static Item aBoxOfNoodles() {
+        return new Product(new BigDecimal("0.30")).oneOf();
     }
 
     private static Item aPackOfDigestives() {

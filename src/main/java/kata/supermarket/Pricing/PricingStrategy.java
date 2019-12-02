@@ -8,7 +8,7 @@ import java.math.RoundingMode;
 import java.util.List;
 
 public interface PricingStrategy {
-    BigDecimal getTotal();
+    BigDecimal calculateTotal();
 
     static BigDecimal subtotal(List<Item> items) {
         return items.stream().map(Item::price)
