@@ -18,7 +18,7 @@ public class TwoForPriceOfOneStrategy implements PricingStrategy {
         this.volume = volume;
     }
 
-    public BigDecimal applyDiscount() {
+    private BigDecimal applyDiscount() {
         if (volume < 1) {
             throw new IllegalArgumentException("Discount should contain applied volume");
         }

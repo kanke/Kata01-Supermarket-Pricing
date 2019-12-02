@@ -13,7 +13,14 @@ frequently and the constructor only requires a handful of parameters
 the buy one get one free is
 - Such info such as Quantity, volume, minimum amount, discount value should be gotten from data source but hard coded for this test
 
-## To Handle - For Test Purposes
+![Imgur](https://imgur.com/GWW0Su4.png)
+
+
+## To Do - For Test Purposes
+- Include sequence diagram if there is time
+- Include more unit test if there is time
+
+## Questions To Think - For Test Purposes
 - Discount should be applied on product level not item level?
 - A product can have multiple discounts, which should we pick? 
 - Multiple discounts on basket items, how should this be handled?
